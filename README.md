@@ -56,10 +56,10 @@ nmap 192.168.88.130
 8. `nmap -p 1-65535` //掃描開放埠
 
 操作法:
-nmap ip -p port -sS -sV
-nmap ip -p port -sS -O
-nmap ip -p port -sS -A
-nmap -iR number -p port -sS -A
+`nmap ip -p port -sS -sV`
+`nmap ip -p port -sS -O`
+`nmap ip -p port -sS -A`
+`nmap -iR number -p port -sS -A`
 
 
 ...etc
