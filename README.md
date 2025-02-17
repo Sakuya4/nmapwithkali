@@ -1,5 +1,7 @@
 # nmap掃描_使用Kali linux
 
+你可以參考筆者提供的bat, 寫一個屬於自己的腳本，使用多種掃描方式進行資訊蒐集
+
 ### 一、主要流程
 Assume: 我們不知道要掃描之主機的IP(屬於內網), 自己的IP。
 
@@ -52,6 +54,13 @@ nmap 192.168.88.130
 6. `nmap -O`   //目標Host OS
 7. `nmap -sn`  //快速找到內網所有設備, IP自己對應
 8. `nmap -p 1-65535` //掃描開放埠
+
+操作法:
+nmap ip -p port -sS -sV
+nmap ip -p port -sS -O
+nmap ip -p port -sS -A
+nmap -iR number -p port -sS -A
+
 
 ...etc
 
